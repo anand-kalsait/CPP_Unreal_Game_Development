@@ -1,0 +1,27 @@
+# git's files (which MUST be (extended) ASCII or UTF-8)
+.gitattributes    zos-working-tree-encoding=iso8859-1
+.gitignore        zos-working-tree-encoding=iso8859-1
+
+# The default for text files
+*.cpp    zos-working-tree-encoding=ibm-1047
+*.md     zos-working-tree-encoding=iso8859-1
+
+# Binary files
+*.jpg    binary
+*.png    binary
+*.gif    binary
+*.zip    binary
+
+# UE file types
+*.uasset filter=lfs diff=lfs merge=lfs -text
+*.umap filter=lfs diff=lfs merge=lfs -text
+
+# Raw Content types
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.3ds filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.xcf filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
